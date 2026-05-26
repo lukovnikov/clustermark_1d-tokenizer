@@ -1,0 +1,7 @@
+.venv
+experiments*
+tokenpredictor.pt
+ckpts/
+*.pyc
+
+test*.png
