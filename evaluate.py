@@ -108,7 +108,7 @@ def _eval_one(
          resultsfile="",
          summaryfile="",
          useclusterpredictor=False,
-         clusterpredictor=CLUSTERPRED,
+         clusterpredictor="clusterpredictor.pt",
         usetokenpredictor=False,
         # tokenpredictor="experiments_v1/gen_clean_v1_100000samples_rar_xl/checkpoints-tokenpred_cp_30epochs/encoder_epoch_28.pt",
         tokenpredictor="tokenpredictor.pt",
@@ -120,7 +120,6 @@ def _eval_one(
         #  imgdir="experiments_v1/gen_clean_v1_50000samples_rar_xl/",
          tag="",
          overwrite=False,
-         var_threshold=0.4,
          ):
 # def _eval_one(
 #          dir="experiments_v1_prefixes/gen_wm_v1_2000samples_rar_xl_64clusters_greenfrac0.25_penalty5_prefix3",
@@ -189,7 +188,6 @@ def _eval_one(
         imgdir=imgdir,
         tag=tag,
         overwrite=overwrite,
-        var_threshold=var_threshold,
     )
 
 
